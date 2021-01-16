@@ -7,7 +7,7 @@ const app = express();
 
 app.use(express.json());
 
-app.post("/users", UserController);
+app.post("/users", UserController.store);
 
 app.listen(process.env.PORT, () => {
   console.log(`Server running on the ${process.env.PORT}`);
